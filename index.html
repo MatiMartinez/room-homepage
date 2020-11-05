@@ -22,7 +22,7 @@
     <header>
       <nav>
         <button class="hamburger active" onclick="handleMenu()">
-          <img class="btn-menu" />
+          <img class="btn-menu" alt="bars" aria-label="open-close" />
         </button>
         <label class="logo">room</label>
         <ul class="d-none">
@@ -57,11 +57,19 @@
             </a>
           </section>
           <div class="btn-group-next-back">
-            <button class="btn-next-back" onclick="leftClick()">
-              <img src="./images/icon-angle-left.svg" alt="" />
+            <button
+              class="btn-next-back"
+              onclick="leftClick()"
+              aria-label="left"
+            >
+              <img src="./images/icon-angle-left.svg" alt="right" />
             </button>
             <button class="btn-next-back" onclick="rightClick()">
-              <img src="./images/icon-angle-right.svg" alt="" />
+              <img
+                src="./images/icon-angle-right.svg"
+                alt="left"
+                aria-label="right"
+              />
             </button>
           </div>
         </article>
